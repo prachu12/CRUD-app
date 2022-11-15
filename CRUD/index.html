@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Welcome</title>
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+		<script src="main.js"></script>
+    </head>
+    <body>
+        <div class="heading">
+            <span class="title1">TODO APP</span>
+            <span class="title2">Add delete edit</span>
+            <button class="register">
+                <a href="#modal" class="registerLink">Add the task +</a>
+            </button>
+        
+
+        <!-- table for storing data -->
+       
+        <input type="text" id="search" placeholder="search by names" onkeyup="search()">
+          
+            <table class="list" id="storeList">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Date</th>
+                        <th>city</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        
+        </div>
+        
+        <!------PopUp window----->
+        <div class="modal_container" id="modal">
+            <div class="modal">
+                <a href="#" class="close">X</a>
+                <span class="modal_heading">
+                    ENTER YOUR DETAILS
+                </span>
+                <table>
+                    <tr>
+                        <td>
+                            <form action="#">
+                                <label>Name</label>
+                                <input type="text"  placeholder="Name" id="name"><br>
+                                <label>Date</label>
+                                <input type="date"  placeholder="Date" id="date"><br>
+                                <label>City</label>
+                                <input type="text"  placeholder="City" id="city"><br>
+                                <input type="submit" class="btnRegister" value="Add" onclick="insertNewData()">
+                                <input type="submit" class="btnRegister" value="Cancel" onclick="cancelForm()">
+                            </form>
+                        </td>
+                    </tr>    
+            </table>
+               
+            </div>
+        </div>
+    </body>
+</html>
